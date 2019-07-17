@@ -4,7 +4,7 @@ See:
 https://packaging.python.org/en/latest/distributing.html
 https://github.com/pypa/sampleproject
 
-usage: `pip install -e .`
+usage: pip install -e .
 
 GenCumulativeSky was conceived, developed and validated by Darren Robinson and Andrew Stone for efficient solar irradiation modelling using RADIANCE
 When using GenCumulativeSky they would be pleased if you would ackowledge their work by referring to the following article: "Robinson, D., Stone, A., 
@@ -30,7 +30,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.3.1',
+    version='0.2.2',
 
     description='Tools to interface with Radiance',
     long_description=long_description,
@@ -63,8 +63,6 @@ setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
 
     ],
 
@@ -86,8 +84,7 @@ setup(
     install_requires=[
         'pvlib',
         'pytest',
-        'pytest-cov',
-        'configparser'
+        'pytest-cov'
         ],
 
     # List additional groups of dependencies here (e.g. development
@@ -104,7 +101,7 @@ setup(
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
     package_data={
-        'bifacial_radiance': ['data/ground.rad','data/gencumulativesky.exe','data/module.json','data/default.ini'],
+        'bifacial_radiance': ['data/ground.rad','data/gencumulativesky.exe','data/module.json'],
     },
     include_package_data=True,
     # Although 'package_data' is the preferred approach, in some case you may
